@@ -17,6 +17,6 @@ spec:
         - name: ghcr-credentials
       containers:
         - name: budgeit-fe
-          image: ghcr.io/budgeit-app/budgeit-fe:211fbf43a2a5947e3deb752f5071be5e93695574
+          image: ghcr.io/budgeit-app/budgeit-fe:f5b8502246ab5a0f34f78d2734f99841faa488a5
           ports:
             - containerPort: 80
