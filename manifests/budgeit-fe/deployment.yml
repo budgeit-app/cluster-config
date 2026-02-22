@@ -13,6 +13,8 @@ spec:
       labels:
         app: budgeit-fe
     spec:
+      imagePullSecrets:
+        - name: ghcr-credentials
       containers:
         - name: budgeit-fe
           image: ghcr.io/budgeit-app/budgeit-fe:2f18eb129db5c0fc31be9c4aa2ee6d591adac208
