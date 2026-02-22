@@ -35,9 +35,9 @@ data:
   index.html: |
     <!DOCTYPE html>
     <html>
-    <head><title>Hello World 3</title></head>
+    <head><title>Hello World 4</title></head>
     <body>
-    <h1>Hello World 3!</h1>
+    <h1>Hello World 4!</h1>
     <p>Change detection works!</p>
     </body>
     </html>

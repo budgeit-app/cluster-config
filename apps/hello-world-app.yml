@@ -14,5 +14,6 @@ spec:
     namespace: hello-world
   syncPolicy:
     automated:
+      enabled: true
       prune: true
       selfHeal: true
