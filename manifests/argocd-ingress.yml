@@ -4,8 +4,13 @@ metadata:
   name: argocd
   namespace: argocd
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: web
+    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
+  tls:
+    - hosts:
+        - argocd.budgeit.xyz
+      secretName: argocd-tls
   rules:
     - host: argocd.budgeit.xyz
       http:
