@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: budgeit-fe
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:budgeit-app/cluster-config.git
+    targetRevision: HEAD
+    path: manifests/budgeit-fe
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: budgeit-fe
+  syncPolicy:
+    automated:
+      enabled: true
+      prune: true
+      selfHeal: true
